@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashmitha R — Portfolio</title>
+  <style>
+    :root{
+      --purple:#6a3fb5;
+      --light:#f7f5fb;
+      --muted:#6b6b7a;
+      --card:#ffffff;
+      --accent: #8f63d9;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--light);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+
+    header{
+      position:fixed;
+      top:0; left:0; right:0;
+      background:rgba(255,255,255,0.96);
+      border-bottom:1px solid rgba(110,86,167,0.08);
+      z-index:1000;
+    }
+    .nav-inner{
+      max-width:980px;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:12px 20px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .brand .logo{
+      width:44px;height:44px;border-radius:10px;
+      background:linear-gradient(135deg,var(--purple),var(--accent));
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;
+      font-size:18px;
+      box-shadow:0 4px 14px rgba(106,63,181,0.18);
+    }
+    nav a{
+      margin-left:18px;
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:600;
+      font-size:14px;
+    }
+    nav a.active{ color:var(--purple) }
+
+    .hero{
+      max-width:980px;
+      margin:110px auto 30px;
+      padding:28px;
+    }
+    .intro h1{margin:0;font-size:1.8rem;color:var(--purple)}
+    .intro p{margin:6px 0 0;color:var(--muted)}
+    .resume-btn{
+      display:inline-block;
+      margin-top:12px;
+      background:var(--purple);
+      color:white;
+      padding:8px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:700;
+      box-shadow:0 4px 10px rgba(106,63,181,0.25);
+      transition:0.2s;
+    }
+    .resume-btn:hover{background:var(--accent)}
+
+    .container{ max-width:980px; margin:18px auto; padding:0 20px;}
+    section.card{
+      background:var(--card);
+      padding:20px;
+      border-radius:10px;
+      margin-bottom:18px;
+      box-shadow:0 6px 20px rgba(100,60,150,0.04);
+    }
+    h2{
+      margin:0 0 12px;
+      color:var(--purple);
+      font-size:1.05rem;
+      padding-left:8px;
+      border-left:4px solid var(--purple);
+    }
+    .two-col{ display:grid; grid-template-columns: 1fr 1fr; gap:16px;}
+    ul{ margin:0; padding-left:18px; color:var(--muted);}
+    .project{
+      background:linear-gradient(180deg,#fbf8ff,#fff);
+      padding:12px;border-radius:8px;margin-bottom:10px;border:1px solid rgba(140,100,200,0.06)
+    }
+    .small{ font-size:0.92rem;color:var(--muted) }
+    footer{ text-align:center;color:var(--muted); padding:28px 12px; margin-top:6px }
+
+    @media (max-width:760px){
+      nav a{ margin-left:12px; font-size:13px }
+      .two-col{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">AR</div>
+        <div>
+          <div style="font-weight:800;color:var(--purple)">Ashmitha R</div>
+          <div style="font-size:12px;color:var(--muted)">B.E. CSE (AI & ML) — Easwari Engineering College</div>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#objective">Objective</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero">
+    <div class="intro">
+      <h1>Ashmitha R</h1>
+      <p class="small">B.E. Computer Science & Engineering (AI & ML) — 2nd Year</p>
+      <p style="margin-top:8px">Aspiring AI/ML Engineer • Passionate about building web apps and AI automation</p>
+
+      <a class="resume-btn"
+   href="https://1drv.ms/b/c/0656c35458ca24de/ES45kCYmZsxLl1bYKFZk6NYBTGDM9o0pv68eyd4LkNkniA?e=GkCdWf"
+   target="_blank"
+>
+  📄 View My Resume
+</a>
+
+    </div>
+  </main>
+
+  <div class="container">
+
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p class="small">
+        I am a motivated Computer Science student specializing in AI & ML. I enjoy developing web applications and creating AI-powered automation agents.
+        Currently pursuing B.E. CSE (AI & ML) at Easwari Engineering College (2024–2028). CGPA: 8.6.
+      </p>
+    </section>
+
+    <section id="objective" class="card">
+      <h2>Objective</h2>
+      <p class="small">
+        Motivated Computer Science student specializing in AI & ML, with skills in Python, Java, and Web Development (HTML, CSS, JS).
+        Seeking an internship to apply skills, contribute to projects, and gain practical experience in AI/ML and Web Development.
+      </p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <div>
+          <h3 style="margin:0 0 8px 0;color:#4b317f;font-size:0.98rem">Programming</h3>
+          <ul>
+            <li>Python, Java, C</li>
+            <li>JavaScript (learning)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin:0 0 8px 0;color:#4b317f;font-size:0.98rem">Web & Tools</h3>
+          <ul>
+            <li>HTML, CSS, Bootstrap (learning), React.js (learning)</li>
+            <li>MySQL (learning), Git/GitHub, Postman</li>
+            <li>n8n (AI automation agents)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="project">
+        <strong>Responsive Web Projects</strong>
+        <p class="small">Built multiple responsive web pages using HTML, CSS, and JavaScript — focused on clean UI and accessibility.</p>
+      </div>
+      <div class="project">
+        <strong>AI Automation Agents with n8n</strong>
+        <p class="small">Created AI-powered automation flows and agents using n8n to automate tasks and integrate APIs for data-driven workflows.</p>
+      </div>
+      <div class="project">
+        <strong>Lost & Found Management System</strong>
+        <p class="small">Full-stack web app for reporting and recovering lost items — built using Spring Boot (backend), MySQL, and responsive HTML/CSS frontend.</p>
+      </div>
+    </section>
+
+    <section id="achievements" class="card">
+      <h2>Achievements & Activities</h2>
+      <ul>
+        <li>Participated in hackathons focused on AI & Web projects</li>
+        <li>Built AI automation projects using n8n</li>
+        <li>Completed coursework: Machine Learning Algorithms, DSA, Web Development, DBMS</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p class="small"><strong>Email:</strong> <a href="mailto:ashmitha2046@gmail.com">ashmitha2046@gmail.com</a></p>
+      <p class="small"><strong>Phone:</strong> <a href="tel:+916374306286">+91 63743 06286</a></p>
+      <p class="small"><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ashmitha-r-26a42b30a" target="_blank" rel="noopener">linkedin.com/in/ashmitha-r-26a42b30a</a></p>
+      <p class="small"><strong>GitHub:</strong> <a href="https://github.com/ashmitha" target="_blank" rel="noopener">github.com/ashmitha</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    <div>© 2025 Ashmitha R • B.E. CSE (AI &amp; ML) — Easwari Engineering College</div>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+    function setActive() {
+      let fromTop = window.scrollY + 120;
+      navLinks.forEach(link => {
+        const section = document.querySelector(link.hash);
+        if (!section) return;
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', setActive);
+    setActive();
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(!target) return;
+        window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
